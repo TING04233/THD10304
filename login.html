@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>會員登入</title>
+    <!--=========== 自己的css========== -->
+    <link rel="stylesheet" href="./css/login.css" />
+
+    <!-- ==========Google font======== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ============ header ========= -->
+    <header class="header">
+      <div class="block">
+        <nav class="nav">
+          <a href="./front_page.html" class="logo"><img src="./images/icon/logo.svg" /></a>
+          <!-- ============ 導覽列 選單  ========= -->
+          <ul class="ul_list">
+            <li>
+              <a href="#">潮流話題</a>
+              <ul class="essay">
+                <li><a href="#">穿搭講堂</a></li>
+                <li><a href="./essay.html">球鞋激推</a></li>
+              </ul>
+            </li>
+            <li><a href="#">熱銷系列</a></li>
+            <li><a href="#">品牌</a></li>
+            <li><a href="./apparel.html">男款</a></li>
+            <li><a href="./shoes.html">女款</a></li>
+            <li><a href="#">兒童</a></li>
+            <li><a href="#">配件</a></li>
+          </ul>
+          <!-- ============ 導覽列 icon ========= -->
+          <div class="nav_icon">
+            <a href="#"
+              ><img src="./images/icon/search.svg" alt="search-ico"
+            /></a>
+            <a href="#"><img src="./images/icon/chat.svg" alt="chat" /></a>
+            <a href="./login.html"><img src="./images/icon/person.svg" alt="people" /></a>
+            <a href="./shopcart.html"
+              ><img src="./images/icon/shopping_bag.svg" alt="bag"
+            /></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+     <!-- =============== 會員登入 ============= -->
+    <main class="main">
+      <form class="form">
+        <h2>會員登入</h2>
+        <div class="account">
+          <label for="email">帳號</label>
+          
+          <input type="email" name="email" id="email" size="30" placeholder="請輸入帳號或信箱">
+        </div>
+        <div class="pwd">
+          <label for="pwd">密碼</label>
+
+          <input type="password" name="email" id="pwd" size="30" placeholder="請輸入密碼">
+          <a href="#">忘記密碼?</a>
+        </div>
+        <div class="remember">
+          <input type="checkbox" name="remember" id="remember">
+          <label for="remember">記住我的帳號</label>
+        </div>
+        <div class="btn">
+          <button type="submit">登入</button>
+        </div>
+        
+      </form>
+      
+      
+      
+          
+  
+      
+           
+             
+        
+    </main>
+    <!-- =============== footer ============= -->
+    <footer>
+      <div class="footer_flex">
+        <div class="customer">
+          <h4>顧客服務</h4>
+          <ul>
+            <li><a href="#">購物須知</a></li>
+            <li><a href="#">售後服務</a></li>
+            <li><a href="#">隱私權政策</a></li>
+          </ul>
+        </div>
+        <!-- =============== footer icon============= -->
+        <div class="connection">
+          <h4>聯絡我們</h4>
+          <ul>
+            <li>電子信箱: a791933@gmail.com</li>
+            <li>服務時間: 周一到週五 11:00~21:30</li>
+          </ul>
+          <div class="community">
+            <p>
+              <a href="#"
+                ><img src="./images/icon/facebook.svg" alt="facebook"
+              /></a>
+              <a href="#"
+                ><img src="./images/icon/instagram.svg" alt="facebook"
+              /></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="reference">
+        本網站為緯育TibaMe前端工程師專業技術養成班THD103學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊 [緯育TibaMe] ，後續會由專人協助處理。
+      </p>
+    </footer>
+  </body>
+</html>

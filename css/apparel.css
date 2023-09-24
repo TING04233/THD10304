@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ececec;
+  font-family: "Libre Caslon Text", serif;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+/* ========= 導覽列 =========== */
+header.header{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+header.header div.block {
+  /* border: 1px solid rebeccapurple; */
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 2px 3px #cccccc;
+
+}
+
+header.header nav.nav {
+  /* border: 1px solid darkgreen; */
+  /* background-color: rgb(0, 0, 0); */
+  width: 1150px;
+  display: flex;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+header.header nav.nav a.logo {
+  width: 140px;
+  height: 60px;
+  margin: 0;
+}
+
+header.header nav.nav a.logo > img {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 200px;
+  height: 50px;
+  margin-top: 4px;
+}
+/* ============ 導覽列 選單 ========= */
+
+header.header ul.ul_list {
+  /* border: 1px solid purple; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  
+}
+
+header.header ul.ul_list li {
+  /* border: 1px salmon; */
+  list-style: none;
+  height: 60px;
+}
+
+header.header ul.ul_list li:hover ul{
+  display: block;
+}
+
+header.header ul.essay{
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  top: 65%;
+  margin-top: 20px;
+  margin-left: 30px;
+  box-shadow: 2px 2px 2px #cccccc;
+  display: none;
+  
+  
+}
+
+header.header ul.essay li{
+  
+  /* border: 1px solid blue; */
+  margin-top: 5px;
+  
+  
+}
+
+
+
+header.header ul.essay li a{
+  
+  /* border: 2px solid olive; */
+  display: block;
+  padding: 10px;
+  height: 30px;
+  margin: 0;
+  
+}
+
+header.header ul.ul_list > li a {
+  /* border: 1px solid darkgreen; */
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  display: inline-block;
+  margin: 0 30px;
+  margin-top: 20px;
+}
+
+header.header ul.ul_list li a:hover {
+  color: rgb(103, 103, 103);
+  transform: scale(1.1);
+  
+}
+
+
+
+/* ============ 導覽列 icon ========= */
+header.header div.nav_icon {
+  display: inline-block;
+  /* border: 1px solid darkgreen; */
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+}
+
+header.header div.nav_icon a {
+  display: inline-block;
+  text-decoration: none;
+  /* border: 1px solid darkgreen; */
+}
+
+header.header div.nav_icon a img {
+  /* border: 1px solid darkorchid; */
+  display: inline-block;
+  margin: 4px 6px;
+  width: 23px;
+  height: 23px;
+}
+/* ========= 首頁 / 潮流話題 / 球鞋激推 =========== */
+
+
+main.main div.sort ul.sort_display {
+  margin: 0;
+  /* border: 1px solid green; */
+  padding: 0;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+main.main div.sort ul.sort_display li {
+  list-style: none;
+  /* border: 1px solid darkblue; */
+  margin-left: 10px;
+}
+
+main.main div.sort ul.sort_display li > a:hover{
+  color: gray
+}
+
+main.main div.sort ul.sort_display li::before {
+  content: "/";
+  
+}
+
+main.main div.sort ul.sort_display > li:first-child::before {
+  display: none;
+}
+
+main.main ul.sort_display > li a :hover{
+  color: aqua;
+}
+
+main.main div.sort ul.sort_display li > a {
+  /* border: 1px solid  blueviolet; */
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+/* ============ 左側欄 ========== */
+main.main div.apparel_flex{
+  /* border: 1px solid red; */
+  display: flex;
+  background-color: #fff;
+}
+main.main div.apparel_flex div.left{
+  /* border: 1px solid blue; */
+  width: 290px;
+  padding: 20px;
+}
+
+main.main div.apparel_flex div.left ul.ul_list{
+  /* border: 1px solid black ; */
+  padding: 0;
+  margin-left: 20px;
+  
+}
+
+main.main div.apparel_flex div.left ul.ul_list li{
+  /* border: 1px solid darkorange; */
+  list-style: none;
+  margin-bottom: 12px;
+  position: relative;
+
+}
+
+main.main div.apparel_flex div.left ul.ul_list li > a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 12px;
+  
+}
+/* ============ 三角形 ========== */
+
+main.main div.apparel_flex div.left ul.ul_list li > a::after{
+  content:'';
+  display: inline-block;
+  border: 5px solid ;
+  border-color: black transparent transparent transparent;
+  top:20px;
+  right: 15px;
+  position: absolute;
+}
+
+
+
+/* ============ 右側欄 ========== */
+
+main.main div.apparel_flex div.right{
+  /* border: 1px solid darkmagenta; */
+  width: calc(100% - 290px);
+ 
+}
+
+div.right div.product_list{
+  max-width: 1200px;
+}
+
+main.main div.apparel_flex div.right div.product_list{
+  /* border: 1px solid darkgreen; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+
+main.main div.apparel_flex div.right div.product_list > span{
+  /* border: 1px solid  darkred; */
+  display: inline-block;
+  font-size: 24px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+main.main div.apparel_flex div.right div.rightlist{
+  /* border: 1px solid black; */
+  font-size: 0;
+}
+
+main.main div.apparel_flex div.right div.rightlist > span{
+  border-bottom: 1px solid black;
+  padding-bottom: 6px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 150px;
+}
+/* ============ img ========== */
+
+main.main div.apparel_flex div.right div.card{
+  /* border: 1px solid darkolivegreen; */
+  width: 305px;
+}
+
+main.main div.apparel_flex div.right div.card a > img{
+  height: 290px;
+  width: 100%;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+main.main div.apparel_flex div.right div.card div.price{
+  /* border: 1px solid darkorchid; */
+  height: 141px;
+}
+
+div.right div.img_flex{
+  max-width: 1200px;
+}
+
+main.main div.img_flex div.price > h3{
+  text-align: center;
+  
+}
+
+main.main div.img_flex div.price > p{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 3px;
+  
+}
+
+main.main div.img_flex div.price > p:last-child{
+  font-size: 14px;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
+
+main.main div.img_flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+main.main div.img_flex div.card{
+  margin-bottom: 20px;
+}
+
+
+/* ============ footer ========== */
+
+footer div.footer_flex {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+footer div.customer {
+  /* border: 2px solid purple; */
+}
+
+footer div.customer ul {
+  padding: 0;
+}
+
+footer div.customer ul li > a {
+  text-decoration: none;
+  display: block;
+  color: rgb(50, 50, 50);
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+footer div.customer ul > li {
+  list-style: none;
+}
+
+footer div.connection {
+  /* border: 2px solid darkgoldenrod; */
+}
+
+footer div.connection ul > li {
+  list-style: none;
+}
+
+footer div.connection ul {
+  padding: 0;
+}
+
+footer div.community p {
+  width: 150px;
+  margin: 0 auto;
+}
+
+footer div.community p a {
+  margin: 0 10px;
+}
+
+footer div.community p a > img {
+  width: 20px;
+  height: 20px;
+}
+
+footer p.reference {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(255, 45, 45);
+  font-weight: bold;
+}

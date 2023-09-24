@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ececec;
+  font-family: "Libre Caslon Text", serif;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ========= 導覽列 =========== */
+header.header{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+header.header div.block {
+  /* border: 1px solid rebeccapurple; */
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 2px 3px #cccccc;
+
+}
+
+header.header nav.nav {
+  /* border: 1px solid darkgreen; */
+  /* background-color: rgb(0, 0, 0); */
+  width: 1150px;
+  display: flex;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+header.header nav.nav a.logo {
+  width: 140px;
+  height: 60px;
+  margin: 0;
+}
+
+header.header nav.nav a.logo > img {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 200px;
+  height: 50px;
+  margin-top: 4px;
+}
+/* ============ 導覽列 選單 ========= */
+
+header.header ul.ul_list {
+  /* border: 1px solid purple; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  
+}
+
+header.header ul.ul_list li {
+  /* border: 1px salmon; */
+  list-style: none;
+  height: 60px;
+}
+
+header.header ul.ul_list li:hover ul{
+  display: block;
+}
+
+header.header ul.essay{
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  padding: 0;
+  background-color: white;
+  top: 65%;
+  margin-top: 20px;
+  margin-left: 30px;
+  box-shadow: 2px 2px 2px #cccccc;
+  display: none;
+  
+  
+}
+
+header.header ul.essay li{
+  
+  /* border: 1px solid blue; */
+  margin-top: 5px;
+  
+  
+}
+
+
+
+header.header ul.essay li a{
+  
+  /* border: 2px solid olive; */
+  display: block;
+  padding: 10px;
+  height: 30px;
+  margin: 0;
+  
+}
+
+header.header ul.ul_list > li a {
+  /* border: 1px solid darkgreen; */
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  transform: scale(1, 1);
+  display: inline-block;
+  margin: 0 30px;
+  margin-top: 20px;
+}
+
+header.header ul.ul_list li a:hover {
+  color: rgb(103, 103, 103);
+  transform: scale(1.1);
+  
+}
+
+
+
+/* ============ 導覽列 icon ========= */
+header.header div.nav_icon {
+  display: inline-block;
+  /* border: 1px solid darkgreen; */
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+}
+
+header.header div.nav_icon a {
+  display: inline-block;
+  text-decoration: none;
+  /* border: 1px solid darkgreen; */
+}
+
+header.header div.nav_icon a img {
+  /* border: 1px solid darkorchid; */
+  display: inline-block;
+  margin: 4px 6px;
+  width: 23px;
+  height: 23px;
+}
+
+/* ========= banner 輪播圖=========== */
+main.main {
+  /* border: 3px solid darkgreen; */
+  margin-top:20px;
+  /* margin-bottom: 40px; */
+}
+
+main.main section.sec {
+  
+  margin-bottom: 30px;
+}
+
+main.main div.banner {
+  /* border: 1px solid black; */
+  width: 1050px;
+  margin: 0 auto;
+}
+
+main.main div.banner a {
+  display: inline-block;
+}
+
+main.main div.banner a img {
+  width: 100%;
+  /* border: 2px solid black; */
+}
+
+/* ============ section pic ========= */
+
+section ul.pic {
+  /* border: 3px solid rebeccapurple; */
+  margin: 0px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section ul.pic li.list {
+  /* border: 2px solid aqua; */
+  list-style: none;
+  text-align: center;
+  flex-basis: 500px;
+}
+
+section ul.pic li.list a > img {
+  width: 100%;
+}
+
+section ul.pic li.list.nike a > img {
+  display: inline-block;
+  height: 334px;
+}
+
+section ul.pic li.list.nike {
+  margin-left: 25px;
+}
+
+section ul.pic li.list > a {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+section ul.pic li.list a > h2 {
+  margin: 0;
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+}
+
+section ul.pic li.kid {
+  margin-left: 25px;
+}
+
+section ul.pic li.list p {
+  /* border: 1px solid blue; */
+  background-color: #a1c4fd;
+  text-decoration: none;
+  display: inline-block;
+  /* border: 1px solid red; */
+  text-align: left;
+  padding-left: 16px;
+  width: 105px;
+  height: 35px;
+  margin: 15px;
+  color: white;
+  font-weight: bold;
+  text-shadow: -1px -1px 5px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+/* ============ shop 三角形 ========= */
+section ul.pic li.list p::after {
+  content: "";
+  display: inline-block;
+  /* width: 10px; */
+  /* height: 10px; */
+  border: 10px solid;
+  border-color: transparent transparent transparent white;
+  margin-left: 10px;
+  position: absolute;
+  top: 7px;
+}
+
+/* ============ 服裝 ========== */
+
+div.shirt_text h2 {
+  /* border: 2px solid black; */
+  text-align: center;
+  font-size: 40px;
+}
+
+/* ============ 服飾文章 ========== */
+
+article.card {
+  /* border: 3px solid darkgreen; */
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 1150px;
+}
+
+section div.shirt_text {
+  /* background-color: rgb(163, 159, 159); */
+}
+
+section div.img_block {
+  /* border: 1px solid purple; */
+  width: 360px;
+  height: 380px;
+  position: relative;
+
+  margin: 0 10px 45px;
+}
+
+section div.img_block span.box {
+  display: block;
+  /* border: 3px solid saddlebrown; */
+  height: 250px;
+  position: absolute;
+  width: 360px;
+  bottom: -30px;
+  background-color: white;
+}
+
+section div.img_block a img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+section div.content_box {
+  /* border: 3px solid darkgreen; */
+  width: 330px;
+  height: 250px;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  z-index: 1;
+  padding: 15px;
+ 
+}
+
+section div.content_box span {
+  font-size: 10px;
+  color: rgb(50, 50, 50);
+}
+
+section div.content_box h3 {
+  font-size: 25px;
+  margin: 10px 0px;
+}
+
+section div.content_box h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+section div.content_box p {
+  color: rgb(50, 50, 50);
+  display: block;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+section div.read {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+section div.read a {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+/* ============ footer ========== */
+
+footer div.footer_flex {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  
+}
+
+footer div.customer {
+  /* border: 2px solid purple; */
+}
+
+footer div.customer ul {
+  padding: 0;
+}
+
+footer div.customer ul li > a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(50, 50, 50);
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+footer div.customer ul > li {
+  list-style: none;
+}
+
+
+footer div.connection ul > li {
+  list-style: none;
+}
+
+footer div.connection ul {
+  padding: 0;
+}
+
+footer div.community p {
+  width: 150px;
+  margin: 0 auto;
+}
+
+footer div.community p a {
+  margin: 0 10px;
+}
+
+footer div.community p a > img {
+  width: 20px;
+  height: 20px;
+}
+
+footer p.reference {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(255, 45, 45);
+  font-weight: bold;
+}

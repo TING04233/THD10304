@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>購物車</title>
+  <!--=========== 自己的css========== -->
+  <link rel="stylesheet" href="./css/shopcart.css" />
+
+  <!-- ==========Google font======== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Roboto:wght@300&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ============ header ========= -->
+  <header class="header">
+    <div class="block">
+      <nav class="nav">
+        <a href="./front_page.html" class="logo"><img src="./images/icon/logo.svg" /></a>
+        <!-- ============ 導覽列 選單  ========= -->
+        <ul class="ul_list">
+          <li>
+            <a href="#">潮流話題</a>
+            <ul class="essay">
+              <li><a href="#">穿搭講堂</a></li>
+              <li><a href="./essay.html">球鞋激推</a></li>
+            </ul>
+          </li>
+          <li><a href="#">熱銷系列</a></li>
+          <li><a href="#">品牌</a></li>
+          <li><a href="./apparel.html">男款</a></li>
+          <li><a href="./shoes.html">女款</a></li>
+          <li><a href="#">兒童</a></li>
+          <li><a href="#">配件</a></li>
+        </ul>
+        <!-- ============ 導覽列 icon ========= -->
+        <div class="nav_icon">
+          <a href="#"><img src="./images/icon/search.svg" alt="search-ico" /></a>
+          <a href="#"><img src="./images/icon/chat.svg" alt="chat" /></a>
+          <a href="./login.html"><img src="./images/icon/person.svg" alt="people" /></a>
+          <a href="./shopcart.html"><img src="./images/icon/shopping_bag.svg" alt="bag" /></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- =============== shopping cart header ============= -->
+  <main class="main">
+    <section class="cart_header">
+      <div class="shop_title">
+        <ul class="information">
+          <li>商品資料</li>
+
+          <li>單件價格</li>
+          <li>數量</li>
+          <li>小計</li>
+        </ul>
+      </div>
+      <div class="shop_details">
+        <div class="col1">
+          <img src="./images/apparel pic/Rectangle 16.svg" alt="Tshirt">
+          <div class="content_box">
+            <p>ADIDAS x National Geographic 男 GEO TEE LS 長袖上衣 - IL8975</p>
+            <span>S</span>
+          </div>
+        </div>
+        <div class="col2">
+          <span>NT1,590</span>
+          <span>NT1,990</span>
+        </div>
+        <div class="col3">
+          <input type="number">
+        </div>
+        <div class="col4">
+          <span>NT1,590</span>
+        </div>
+      </div>
+    </section>
+<!-- =========== shopping cart footer ============= -->
+    <div class="cart_footer">
+      <div class="left">
+
+        <h3>選擇送貨地點及付款方式</h3>
+        <div class="form_group">
+          <p>送貨地點</p>
+          <select>
+            <option value="">台灣</option>
+          </select>
+
+          <div class="form_groupone">
+            <p>送貨方式</p>
+            <select>
+              <option value="">宅配到府</option>
+              <option value="">711取貨付款</option>
+              <option value="">711取貨不付款</option>
+            </select>
+          </div>
+
+          <div class="form_grouptwo">
+            <p>付款方式</p>
+            <select>
+              <option value="">信用卡</option>
+              <option value="">超商代碼</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+      <div class="right">
+        <h3>訂單資訊</h3>
+        <div class="subtotal">
+          <span>小計:</span>
+        </div>
+        <div class="freight">
+          <span>運費:</span>
+        </div>
+        <div class="total">
+          <span>合計:</span>
+        </div>
+        <div class="btn">
+          <button>前往結帳</button>
+        </div>
+        
+      </div>
+    </div>
+      
+  </main>
+  <!-- =============== footer ============= -->
+  <footer>
+    <div class="footer_flex">
+      <div class="customer">
+        <h4>顧客服務</h4>
+        <ul>
+          <li><a href="#">購物須知</a></li>
+          <li><a href="#">售後服務</a></li>
+          <li><a href="#">隱私權政策</a></li>
+        </ul>
+      </div>
+      <!-- =============== footer icon============= -->
+      <div class="connection">
+        <h4>聯絡我們</h4>
+        <ul>
+          <li>電子信箱: a791933@gmail.com</li>
+          <li>服務時間: 周一到週五 11:00~21:30</li>
+        </ul>
+        <div class="community">
+          <p>
+            <a href="#"><img src="./images/icon/facebook.svg" alt="facebook" /></a>
+            <a href="#"><img src="./images/icon/instagram.svg" alt="facebook" /></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="reference">
+      本網站為緯育TibaMe前端工程師專業技術養成班THD103學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊 [緯育TibaMe] ，後續會由專人協助處理。
+    </p>
+  </footer>
+</body>
+
+</html>
